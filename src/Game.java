@@ -1,12 +1,12 @@
-import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
-import javax.imageio.ImageIO;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
-import java.awt.event.*;
+import javax.imageio.ImageIO;
+import javax.swing.*;
 
 public class Game extends JPanel implements ActionListener {
     private Timer timer;
@@ -223,7 +223,7 @@ public class Game extends JPanel implements ActionListener {
             int obstacleHeight;
 
             if (randomType.equals("ufo")) {
-                yPos = 370; obstacleWidth = 100; obstacleHeight = 50;
+                yPos = 400; obstacleWidth = 100; obstacleHeight = 50;
             } else if (randomType.equals("car")) {
                 yPos = 430; obstacleWidth = 120; obstacleHeight = 100;
             } else {
